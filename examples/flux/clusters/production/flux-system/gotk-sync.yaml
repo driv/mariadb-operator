@@ -8,10 +8,10 @@ metadata:
 spec:
   interval: 1m0s
   ref:
-    branch: main
+    branch: test-flux
   secretRef:
     name: flux-system
-  url: ssh://git@github.com/mariadb-operator/mariadb-operator
+  url: ssh://git@github.com/driv/mariadb-operator
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
