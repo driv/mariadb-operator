@@ -40,6 +40,8 @@ spec:
       enabled: true
       hosts:
       - host: prism.172-18-0-6.traefik.me
+        paths:
+        - /
     resources:
       requests:
         memory: 300Mi
