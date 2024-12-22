@@ -185,8 +185,8 @@ sysbench-galera: ## Run sysbench tests for Galera.
 
 ##@ Examples
 
-GITHUB_USER := mariadb-operator
-GITHUB_REPOSITORY := mariadb-operator
+GITHUB_USER ?= mariadb-operator
+GITHUB_REPOSITORY ?= mariadb-operator
 GITHUB_BRANCH ?= main
 
 .PHONY: example-flux
