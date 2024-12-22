@@ -36,9 +36,10 @@ spec:
           memory: 300Mi
         limits:
           memory: 1Gi
-    service:
-      type: ClusterIP
-      port: 80
+    ingress:
+      enabled: true
+      hosts:
+      - host: prism.172-18-0-6.traefik.me
     resources:
       requests:
         memory: 300Mi
