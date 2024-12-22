@@ -36,12 +36,9 @@ spec:
           memory: 300Mi
         limits:
           memory: 1Gi
-    ingress:
-      enabled: true
-      hosts:
-      - host: prism.172-18-0-6.traefik.me
-        paths:
-        - /
+    service:
+      type: LoadBalancer
+      port: 8080
     resources:
       requests:
         memory: 300Mi
